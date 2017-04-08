@@ -1,7 +1,7 @@
 const WechatApi = require('wechat-api')
 
-const appid = 'wxb71708e8fc08e734'
-const appsecret = '1aba9b29319934a277ecafc7b5d338e2'
+const appid = 'wx900033d8b8083d6d'
+const appsecret = '6ae69555c410768d44e7cafbdf188546'
 
 const api = new WechatApi(appid, appsecret)
 

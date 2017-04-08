@@ -8,8 +8,11 @@ const api = new WechatApi(appid, appsecret)
 const content = '郑俊鑫好腻害'
 const recervers = 0 // 默认 0 是未分组的 id
 const callback = (err, result) => {
-    if (!err) {
-        console.log('massSendText success result is:', result)
+    if (err) {
+        console.log('massSendText fail', err)
+    }
+    else {
+        console.log('massSendText success', result)
     }
 }
 

@@ -1,5 +1,5 @@
 const WechatApi = require('wechat-api')
-const {APPID, APPSECRET} = require('./utils/constants')
+const {APPID, APPSECRET} = require('./constants')
 
 const api = new WechatApi(APPID, APPSECRET)
 

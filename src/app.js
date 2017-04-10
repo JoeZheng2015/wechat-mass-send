@@ -1,6 +1,6 @@
 const {fetchShows} = require('./actions')
 const {hasNewShow} = require('./utils/helper')
-const {massSendText} = require('./weApi')
+const {massSendText} = require('./utils/weApi')
 
 const HOUR = 1000 * 60 * 60
 

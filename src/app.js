@@ -1,10 +1,8 @@
 const {fetchShows} = require('./actions')
-const {hasNewShow} = require('./helper')
+const {hasNewShow} = require('./utils/helper')
 const {massSendText} = require('./weApi')
 
 const HOUR = 1000 * 60 * 60
-
-
 
 setInterval(() => {
     fetchShows()

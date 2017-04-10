@@ -6,10 +6,6 @@ exports.hasNewShow = function(shows) {
     return result
 }
 
-exports.notify = function(content, recervers = 0) {
-
-}
-
 exports.appendQuery = function(url, query) {
     if (!query) {
         return url

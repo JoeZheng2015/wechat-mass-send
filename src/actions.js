@@ -1,5 +1,5 @@
 const request = require('request-promise')
-const {appendQuery} = require('./helper')
+const {appendQuery} = require('./utils/helper')
 const querystring = require('querystring')
 const {SHOW_URL, SHOW_OPTIONS} = require('./utils/constants')
 

@@ -1,8 +1,9 @@
 const request = require('request-promise')
 const {appendQuery} = require('./helper')
 const querystring = require('querystring')
+const {SHOW_URL} = require('./utils/constants')
 
-exports.fetchShows = function(url = 'http://b2cqq.show.wepiao.com/items') {
+exports.fetchShows = function(url = SHOW_URL) {
     const data = {
         city_name: '深圳',
         page: 1,

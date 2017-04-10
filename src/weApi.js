@@ -1,9 +1,7 @@
 const WechatApi = require('wechat-api')
+const {APPID, APPSECRET} = require('./utils/constants')
 
-const appid = 'wxb71708e8fc08e734'
-const appsecret = '1aba9b29319934a277ecafc7b5d338e2'
-
-const api = new WechatApi(appid, appsecret)
+const api = new WechatApi(APPID, APPSECRET)
 
 const defaultCallback = (err, result) => {
     if (err) {

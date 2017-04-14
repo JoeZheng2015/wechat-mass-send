@@ -13,6 +13,5 @@ const defaultCallback = (err, result) => {
 }
 
 exports.massSendText = function(content, recervers = 0, callback = defaultCallback) {
-    // api.massSendText(content, recervers, callback)
-    console.log(content, recervers)
+    api.massSendText(content, recervers, callback)
 }

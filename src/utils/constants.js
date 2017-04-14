@@ -1,6 +1,6 @@
-exports.APPID = 'wxb71708e8fc08e734'
+exports.APPID = 'wx900033d8b8083d6d'
 
-exports.APPSECRET = '1aba9b29319934a277ecafc7b5d338e2'
+exports.APPSECRET = '6ae69555c410768d44e7cafbdf188546'
 
 exports.SHOW_URL = 'http://b2cqq.show.wepiao.com/items'
 

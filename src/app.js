@@ -16,6 +16,7 @@ setInterval(() => {
             return shows
         })
         .then(shows => {
+            console.log(`在${new Date().getHours()}时，有${shows.length}个项目`)
             const newShows = getNewShows(preShows, shows)
             if (newShows.length) {
                 const urls = newShows.map(show => `http://mqq.show.wepiao.com/detail/${show.id}?static_api=false`)

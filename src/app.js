@@ -9,7 +9,7 @@ setInterval(() => {
     fetchShows()
         .then(res => {
             const shows = res.list
-
+console.log(shows)
             if (preShows === undefined) {
                 preShows = shows
             }
@@ -24,3 +24,21 @@ setInterval(() => {
             }
         })
 }, HOUR)
+
+
+    fetchShows()
+        .then(res => {
+            const shows = res.list
+            if (preShows === undefined) {
+                preShows = shows
+            }
+            return shows
+        })
+        .then(shows => {
+            console.log(`在${new Date().getHours()}时，有${shows.length}个项目`)
+            const newShows = getNewShows(preShows, shows)
+
+            newShows.forEach(show => {
+                massSendText(`${show.item_title_cn}：http://mqq.show.wepiao.com/detail/${show.id}?static_api=false`)
+            })
+        })

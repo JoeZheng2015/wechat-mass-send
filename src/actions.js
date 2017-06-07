@@ -5,7 +5,9 @@ const {SHOW_URL, SHOW_OPTIONS} = require('./utils/constants')
 
 exports.fetchShows = function(url = SHOW_URL) {
     return request({
-        url: appendQuery(url, querystring.stringify(SHOW_OPTIONS)),
+        url: appendQuery(url, querystring.stringify(Object.assign({}, SHOW_OPTIONS, {
+            _t: Date.now(),
+        }))),
         json: true,
     })
 }

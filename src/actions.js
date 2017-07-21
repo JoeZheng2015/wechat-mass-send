@@ -1,7 +1,7 @@
 const request = require('request-promise')
 const {appendQuery} = require('./utils/helper')
 const querystring = require('querystring')
-const {SHOW_URL, SHOW_OPTIONS} = require('./utils/constants')
+const {SHOW_URL, SHOW_OPTIONS} = require('./utils/config')
 
 exports.fetchShows = function(url = SHOW_URL) {
     return request({
